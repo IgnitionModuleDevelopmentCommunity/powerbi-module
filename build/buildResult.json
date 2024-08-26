@@ -1,0 +1,52 @@
+{
+    "moduleId": "org.fakester.powerbicomponent",
+    "moduleName": "PowerBIComponents",
+    "moduleDescription": "A module that adds components to the Perspective module.",
+    "version": "0.0.2",
+    "checksum": {
+        "checksum": "0e550c9cd0d684bbd9c6bbff915f8290ceeea940f7b0d1c7e26ebd288d88e004",
+        "algorithm": "SHA256"
+    },
+    "fileName": "PowerBIComponents.modl",
+    "fileSize": 142949,
+    "artifacts": {
+        ":common": {
+            "projectPath": ":common",
+            "projectName": "common",
+            "scope": "DG",
+            "artifacts": [
+                {
+                    "id": "org.fakester:common:0.0.2",
+                    "jarName": "common-0.0.2.jar"
+                }
+            ]
+        },
+        ":designer": {
+            "projectPath": ":designer",
+            "projectName": "designer",
+            "scope": "D",
+            "artifacts": [
+                {
+                    "id": "org.fakester:designer:0.0.2",
+                    "jarName": "designer-0.0.2.jar"
+                }
+            ]
+        },
+        ":gateway": {
+            "projectPath": ":gateway",
+            "projectName": "gateway",
+            "scope": "G",
+            "artifacts": [
+                {
+                    "id": "web.jar (project :web)",
+                    "jarName": "web-0.0.2.jar"
+                },
+                {
+                    "id": "org.fakester:gateway:0.0.2",
+                    "jarName": "gateway-0.0.2.jar"
+                }
+            ]
+        }
+    },
+    "metaInfo": {}
+}

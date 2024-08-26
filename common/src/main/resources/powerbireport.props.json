@@ -1,0 +1,67 @@
+{
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "tenantID",
+        "clientID",
+        "clientSecret",
+        "workspaceID",
+        "reportID"
+    ],
+    "properties": {
+        "tenantID": {
+            "type": "string",
+            "description": "Tenant ID for your PowerBI 'App Owns Data' Microsoft Entra App Registration",
+            "default": "000-000-000"
+        },
+        "clientID": {
+            "type": "string",
+            "description": "Client ID for your PowerBI 'App Owns Data' Microsoft Entra App Registration",
+            "default": "111-111-111"
+        },
+        "clientSecret": {
+            "type": "string",
+            "description": "Client Secret for your PowerBI 'App Owns Data' Microsoft Entra App Registration",
+            "default": "abcdefg"
+        },
+        "workspaceID": {
+            "type": "string",
+            "description": "Workspace (Group) ID for the desired PowerBI Report to Embed",
+            "default": "222-222-222"
+        },
+        "reportID": {
+            "type": "string",
+            "description": "Report ID for the desired PowerBI Report to Embed",
+            "default": "333-333-333"
+        },
+        "reportName": {
+            "type": "string",
+            "description": "Report Name returned by the embedded PowerBI Report",
+            "default": "Report Name",
+            "access": "Protected"
+        },
+        "reportConfig": {
+            "type": "object",
+            "description": "A set of properties needed to embed the PowerBI Report",
+            "default": {
+                "Type": "report",
+                "EmbedUrl": "https://app.powerbi.com/reportEmbed?reportId=000&groupId=000&w=0&config=000",
+                "MobileDefaultPage": null,
+                "MinutesToExpiration": 59,
+                "Id": "333-333-333",
+                "DefaultPage": null,
+                "EmbedToken": {
+                    "tokenId": "555-555-555",
+                    "expiration": "2024-12-31T00:00:00Z",
+                    "token": "00000000"
+                }
+            }
+        },
+        "style": {
+            "$ref": "urn:ignition-schema:schemas/style-properties.schema.json",
+            "default": {
+                "classes": ""
+            }
+        }
+    }
+}

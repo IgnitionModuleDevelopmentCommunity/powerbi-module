@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modules>
+	<module>
+		<name>PowerBIComponents</name>
+		<id>org.fakester.powerbicomponent</id>
+		<version>0.0.2</version>
+		<description>A module that adds components to the Perspective module.</description>
+		<license>license.html</license>
+		<requiredIgnitionVersion>8.1.8</requiredIgnitionVersion>
+		<freeModule>false</freeModule>
+		<hook scope="G">org.fakester.gateway.PowerBIGatewayHook</hook>
+		<hook scope="D">org.fakester.designer.PowerBIDesignerHook</hook>
+		<depends scope="DG">com.inductiveautomation.perspective</depends>
+		<requiredFrameworkVersion>8</requiredFrameworkVersion>
+		<jar scope="DG">common-0.0.2.jar</jar>
+		<jar scope="D">designer-0.0.2.jar</jar>
+		<jar scope="G">web-0.0.2.jar</jar>
+		<jar scope="G">gateway-0.0.2.jar</jar>
+	</module>
+</modules>
