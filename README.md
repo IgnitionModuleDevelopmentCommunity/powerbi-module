@@ -15,9 +15,7 @@ In order to embed a report, you need to provide the component with the reportCon
 
 ![image](https://github.com/inductive-automation/powerbi-module/assets/152290956/7b7a0480-3ebe-4634-b8da-e93d34b4034d)
 
-The reportConfig property is currently not implemented as part of the module (but is planned to be implemented). Currently the easiest way to get that reportConfig is to use the binding on the provided [test view](PowerBITestView) 
-
-Which is reproduced here for convenience:
+Most of the properties on the report (Tenant ID, Client ID, Client Secret, Workspace ID, and Report ID) are not directly linked to the report, and **must be used in a binding on the reportConfig property to fetch the report correctly**. That binding is reproduced below for convenience, or see how it is configured on the provided [test view](PowerBITestView) 
 ```
 {
   "type": "expr-struct",
