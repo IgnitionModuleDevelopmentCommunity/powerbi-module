@@ -40,21 +40,129 @@
             "default": "Report Name",
             "access": "Protected"
         },
+        "reportSettings": {
+            "type": "object",
+            "description": "Settings to apply to the report such as whether to hide the filter pane",
+            "default": {
+                "panes": {
+                    "bookmarks": {
+                        "visible": false
+                    },
+                    "fields": {
+                        "expanded": false
+                    },
+                    "filters": {
+                        "expanded": false,
+                        "visible": true
+                    },
+                    "pageNavigation": {
+                        "visible": false
+                    },
+                    "selection": {
+                        "visible": true
+                    },
+                    "syncSlicers": {
+                        "visible": true
+                    },
+                    "visualizations": {
+                        "expanded": false
+                    }
+                },
+                "background": 1,
+                "layoutType": 0
+            }
+        },
         "reportConfig": {
             "type": "object",
             "description": "A set of properties needed to embed the PowerBI Report",
             "default": {
                 "Type": "report",
-                "EmbedUrl": "https://app.powerbi.com/reportEmbed?reportId=000&groupId=000&w=0&config=000",
+                "EmbedUrl": "",
                 "MobileDefaultPage": null,
                 "MinutesToExpiration": 59,
-                "Id": "333-333-333",
+                "Id": "",
                 "DefaultPage": null,
                 "EmbedToken": {
-                    "tokenId": "555-555-555",
-                    "expiration": "2024-12-31T00:00:00Z",
-                    "token": "00000000"
+                    "tokenId": "",
+                    "expiration": "",
+                    "token": ""
                 }
+            }
+        },
+        "reloadReport": {
+            "type": "boolean",
+            "description": "Set to True to reload report",
+            "default": false
+        },
+	    "reportLoaded": {
+            "type": "boolean",
+            "description": "Will be set to True when report is loaded in component",
+            "default": false
+        },
+        "filters": {
+            "type": "object",
+            "description": "Filters to apply to the report",
+            "default": {
+                "reportFilters": [],
+                "pageFilters": [],
+                "visualFilters": [],
+                "targetVisual": {
+                    "name": "",
+                    "type": ""
+                },
+                "applyFilters": false,
+                "removeFilters": false
+            }
+        },
+        "visualData": {
+            "type": "object",
+            "description": "Data returned by targeted visual",
+            "default": {
+                "targetVisual": {
+                    "name": "",
+                    "type": ""
+                },
+                "type": 0,
+                "limit": 20,
+                "data": "",
+                "exportData": false
+            }
+        },
+        "visualProperties": {
+            "type": "object",
+            "description": "Data returned by targeted visual",
+            "default": {
+                "targetVisual": {
+                    "name": "",
+                    "type": ""
+                },
+                "selectors": [
+                    {
+                        "objectName": "",
+                        "propertyName": ""
+                    }
+                ],
+                "values": [
+                    {
+                        "schema": "http://powerbi.com/product/schema#property",
+                        "value": ""
+                    }
+                ],
+                "applyProperties": false,
+                "resetProperties": false
+            }
+        },
+        "selectedData": {
+            "type": "object",
+            "description": "Currently selected data from report",
+            "default": {}
+        },
+        "status" : {
+            "type": "object",
+            "description": "Current Status of report (loaded, rendered, visualClicked, dataSelected)",
+            "default": {
+                "type": "",
+                "timestamp": ""
             }
         },
         "style": {

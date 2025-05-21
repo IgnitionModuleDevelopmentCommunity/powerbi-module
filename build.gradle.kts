@@ -9,7 +9,7 @@ plugins {
 }
 
 allprojects {
-    version = "0.0.2"
+    version = "0.9.7"
     group = "org.fakester"
 }
 
@@ -21,7 +21,7 @@ ignitionModule {
     name.set("PowerBIComponents")
     id.set("org.fakester.powerbicomponent")
     moduleVersion.set("${project.version}")
-    moduleDescription.set("A module that adds PowerBI components to the Perspective module.")
+    moduleDescription.set("A module that adds a PowerBI report component to Perspective.")
     requiredIgnitionVersion.set("8.1.8")
     license.set("license.html")
 

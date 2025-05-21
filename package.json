@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "@types/lodash.isequal": "^4.5.8"
+  },
+  "dependencies": {
+    "powerbi-client-react": "^2.0.0"
   }
 }

@@ -19,7 +19,6 @@
         "noImplicitThis": true,
         "noImplicitReturns": false,
         "noImplicitAny": true,
-        "suppressImplicitAnyIndexErrors": true,
         "noUnusedLocals": true,
         "outDir": "dist/",
         "pretty": true,
@@ -27,7 +26,8 @@
         "sourceMap": true,
         "strictNullChecks": true,
         "target": "es6",
-        "lib": ["es6", "dom", "es7", "es2018"]
+        "lib": ["es6", "dom", "es7", "es2019"],
+        "esModuleInterop": true
     },
     "include": [
         "./typescript/**/*.ts",
