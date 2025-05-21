@@ -14,7 +14,11 @@
     "clean": "lerna clean",
     "check": "lerna check"
   },
-    "devDependencies" : {
-        "lerna": "3.22.1"
-    }
+  "devDependencies": {
+    "lerna": "3.22.1"
+  },
+  "dependencies": {
+    "powerbi-client-react": "^2.0.0",
+    "powerbi-models": "^1.15.2"
+  }
 }
