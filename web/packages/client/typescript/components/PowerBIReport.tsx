@@ -119,7 +119,7 @@ export interface PowerBIProps {
 	toggleExport(value: boolean): void;
 	visualProperties?: visualPropertiesObject;
 	toggleApplyProps(value: boolean): void;
-	toggleReset(valie: boolean): void;
+	toggleReset(value: boolean): void;
 	selectedData? : object;
 	setSelected(value: object): void;
 	status?: object;

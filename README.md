@@ -55,7 +55,7 @@ For example, with the following url, the red underlined section is the Group (Wo
 
 # PowerBI Report Properties #
 As of version 0.9.7 of the module, there are many new properties for interacting with the PowerBI report.
-![image](https://github.com/user-attachments/assets/5a848aea-92da-471e-97ef-964a79000d89)
+![image](https://github.com/user-attachments/assets/8fcaae6a-888d-4e31-91bd-93166427b353)
 
 ## tenantID, clientID, clientSecret, workspaceID, reportID ##
 ![image](https://github.com/user-attachments/assets/29f31a48-e2f8-48a1-a123-5143272af0ce)
@@ -128,6 +128,15 @@ A good way to get the exact filter format and **targetVisual** is to use the **s
 ![image](https://github.com/user-attachments/assets/b797bfda-356f-4413-9f7b-07154326bdfe)
 
 You can export data from a **targetVisual**, after you set the **type** (0 for Summarized (only the filtered data), 1 for Underlying (all data from the table connected to the visual)), and **limit** for the number of rows to return. When you select the **exportData** toggle, the module will return the number of rows of data you asked for (in a single CSV object with column headers) to the **data** property. You can use a script to format this data into whatever format you want to use within Ignition. You can get the **targetVisual** type/name by using the **selectedData** property, described below.
+
+## visualProperties ##
+![image](https://github.com/user-attachments/assets/2d4b4235-7102-4931-88a3-1707d97c7e24)
+
+Using this property object, you can select a **targetVisual**, set an array of **selectors**, set a matching array of **values** and then apply those properties to the visual. For the details of selectors and values, see the [PowerBI Visual Properties documentation](https://learn.microsoft.com/en-us/javascript/api/overview/powerbi/visual-properties). 
+
+The **applyProperties** toggle will apply these properties to the **targetVisual** in order, and print out in the console something like "attempting to set properties on visual name/type, object/property set to value" for each of the property/value pairs in their respective arrays. After setting these properties, the **applyProperties** toggle will be set back to False. 
+
+Similarly, you can reset all properties of that visual to default by setting **resetProperties** to True, which will print in the console something like "resetting X properties to target visual. attempting to set properties on visual name/type, property/value reset". After resetting, **resetProperties** will be set back to False.
 
 ## selectedData ##
 ![image](https://github.com/user-attachments/assets/8d7e56c1-6d0b-4906-861e-d1eccc7ab8db)
