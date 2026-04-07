@@ -2,13 +2,13 @@
     "moduleId": "org.fakester.powerbicomponent",
     "moduleName": "PowerBIComponents",
     "moduleDescription": "A module that adds a PowerBI report component to Perspective.",
-    "version": "0.9.8",
+    "version": "0.9.9",
     "checksum": {
-        "checksum": "2db95f110b61977941b757faef127a9aa7e47db41692315f4b4a182760029a88",
+        "checksum": "75a3e78c36e21f819610ee3f42b5c9184babe58495acfe53ca69d3c18a9f97ea",
         "algorithm": "SHA256"
     },
     "fileName": "PowerBIComponents.modl",
-    "fileSize": 112276,
+    "fileSize": 216310,
     "artifacts": {
         ":common": {
             "projectPath": ":common",
@@ -39,11 +39,11 @@
             "artifacts": [
                 {
                     "id": "web.jar (project :web)",
-                    "jarName": "web-0.9.8.jar"
+                    "jarName": "web-0.9.9.jar"
                 },
                 {
-                    "id": "org.fakester:gateway:0.9.8",
-                    "jarName": "gateway-0.9.8.jar"
+                    "id": "org.fakester:gateway:0.9.9",
+                    "jarName": "gateway-0.9.9.jar"
                 }
             ]
         }

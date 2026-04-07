@@ -3,10 +3,10 @@
 	<module>
 		<name>PowerBIComponents</name>
 		<id>org.fakester.powerbicomponent</id>
-		<version>0.9.8</version>
+		<version>0.9.9</version>
 		<description>A module that adds a PowerBI report component to Perspective.</description>
 		<license>license.html</license>
-		<requiredIgnitionVersion>8.1.8</requiredIgnitionVersion>
+		<requiredIgnitionVersion>8.3.0</requiredIgnitionVersion>
 		<freeModule>false</freeModule>
 		<hook scope="G">org.fakester.gateway.PowerBIGatewayHook</hook>
 		<hook scope="D">org.fakester.designer.PowerBIDesignerHook</hook>
@@ -14,7 +14,7 @@
 		<requiredFrameworkVersion>8</requiredFrameworkVersion>
 		<jar scope="DG">common-0.9.8.jar</jar>
 		<jar scope="D">designer-0.9.8.jar</jar>
-		<jar scope="G">web-0.9.8.jar</jar>
-		<jar scope="G">gateway-0.9.8.jar</jar>
+		<jar scope="G">web-0.9.9.jar</jar>
+		<jar scope="G">gateway-0.9.9.jar</jar>
 	</module>
 </modules>
